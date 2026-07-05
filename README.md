@@ -3,7 +3,7 @@ A practical AI tool for validating PC offers with structured analysis.
 Elm is a modular AI prompt system designed to validate and review desktop PC offers.
 
 It analyzes a customer request and an offer, checks for compatibility issues, and provides structured feedback, suggestions, and (optionally) a customer-ready email.
-👉 Live tool: https://https://minigiovanni.github.io/elm-offer-agent/
+👉 Live tool: https://minigiovanni.github.io/elm-offer-agent/
 
 ---
 

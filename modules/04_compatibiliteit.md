@@ -37,4 +37,3 @@ Missende componenten:
 
 Randapparatuur:
 - expliciet benoemen dat dit ontbreekt indien niet aanwezig
-``

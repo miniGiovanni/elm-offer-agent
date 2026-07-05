@@ -13,7 +13,7 @@ function selectBuild(build, element) {
 }
 
 async function copyPrompt() {
-    const url = `https://raw.githubusercontent.com/miniGiovanni/elm-offer-agent/main/builds/${selectedBuild}`;
+    const url = `https://raw.githubusercontent.com/miniGiovanni/elm-offer-agent/main/builds/${selectedBuild}?t=${Date.now()}`;
 
     const res = await fetch(url);
 
@@ -42,7 +42,7 @@ function showToast(message) {
 }
 
 async function updateVersionLabel() {
-    const url = `https://raw.githubusercontent.com/miniGiovanni/elm-offer-agent/main/builds/${selectedBuild}`;
+    const url = `https://raw.githubusercontent.com/miniGiovanni/elm-offer-agent/main/builds/${selectedBuild}?t=${Date.now()}`;
 
     const res = await fetch(url);
     const text = await res.text();

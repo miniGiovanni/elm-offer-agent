@@ -1,0 +1,5 @@
+{
+  "must_contain": ["PCIE", "lane"],
+  "must_have_code": ["E003"],
+  "required_sections": ["Compatibiliteit", "Debug"]
+}

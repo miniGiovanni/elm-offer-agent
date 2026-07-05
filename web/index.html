@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Elm Agent</title>
+  <meta charset="UTF-8">
+</head>
+<body>
+
+<h1>Elm Agent</h1>
+
+<p>Gebruik Elm door onderstaande stappen te volgen:</p>
+
+<button onclick="copyPrompt()">Kopieer Elm (Light)</button>
+
+<h3>Stap 1</h3>
+<p>Open ChatGPT / Copilot / Gemini / Claude</p>
+
+<h3>Stap 2</h3>
+<p>Plak de prompt</p>
+
+<h3>Stap 3</h3>
+<p>Voeg toe:</p>
+
+<pre>
+KLANT:
+(plak hier)
+
+OFFERTE:
+(plak hier)
+</pre>
+
+<script>
+async function copyPrompt() {
+    const url = "https://raw.githubusercontent.com/miniGiovanni/elm-offer-agent/main/builds/elm-light.txt";
+    const res = await fetch(url);
+    const text = await res.text();
+
+    const full = text + "\n\n--- INPUT ---\nKLANT:\n\nOFFERTE:\n";
+
+    await navigator.clipboard.writeText(full);
+    alert("Elm prompt gekopieerd!");
+}
+</script>
+
+</body>
+</html>

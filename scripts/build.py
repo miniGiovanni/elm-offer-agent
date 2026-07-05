@@ -79,7 +79,7 @@ def build():
                 content = f.read()
 
                 # vervang versie placeholder
-                content = content.replace("{{VERSION}}", version_string)
+                content = content.replace("{{VERSION}}", version)
 
                 final_content += content + "\n\n"
 

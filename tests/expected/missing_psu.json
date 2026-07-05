@@ -1,0 +1,5 @@
+{
+  "must_contain": ["PSU", "mis"],
+  "must_have_code": ["E005"],
+  "required_sections": ["Compatibiliteit", "Debug"]
+}

@@ -1,0 +1,5 @@
+{
+  "must_contain": ["NAS", "niet toegestaan"],
+  "must_have_code": ["E003"],
+  "required_sections": ["Compatibiliteit", "Debug"]
+}

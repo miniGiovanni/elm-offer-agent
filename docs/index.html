@@ -3,49 +3,130 @@
 <head>
   <title>Elm Agent</title>
   <meta charset="UTF-8">
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
 
-<h1>Elm Agent</h1>
-<p>Versie: v0.2</p>
+<div class="container">
 
-<p>Gebruik Elm door onderstaande stappen te volgen:</p>
-<select id="buildSelect">
-  <option value="elm-simple.txt">Light (standaard)</option>
-  <option value="elm-full.txt">Full (uitgebreid)</option>
-  <option value="elm-score.txt">Quick (snelle check)</option>
-</select>
-<button onclick="copyPrompt()">Kopieer Elm (Light)</button>
+  <h1>Elm Agent</h1>
 
-<h3>Stap 1</h3>
-<p>Open ChatGPT / Copilot / Gemini / Claude</p>
+  <p class="intro">
+  Elm controleert je PC-offertes en helpt fouten voorkomen.
+  
+  </br></br>
+  <b>Let op: als adviseur ben en blijf je eindverantwoordelijk. Plak NOOIT vertrouwelijke of persoonlijke gegevens in een LLM.</b>
+  </p>
 
-<h3>Stap 2</h3>
-<p>Plak de prompt</p>
+  <h2>Kies je versie</h2>
 
-<h3>Stap 3</h3>
-<p>Voeg toe:</p>
+  <div class="cards">
 
-<pre>
-KLANT:
-(plak hier)
+    <div class="card active" onclick="selectBuild('elm-simple.txt', this)">
+      <h3>Light (⭐ Aanbevolen)</h3>
+      <p>Standaard gebruik, snelle analyse</p>
+    </div>
 
-OFFERTE:
-(plak hier)
-</pre>
+    <div class="card" onclick="selectBuild('elm-full.txt', this)">
+      <h3>Full</h3>
+      <p>Uitgebreid + klantmail</p>
+    </div>
 
-<script>
-async function copyPrompt() {
-    const url = "https://raw.githubusercontent.com/miniGiovanni/elm-offer-agent/main/builds/elm-light.txt";
-    const res = await fetch(url);
-    const text = await res.text();
+    <div class="card" onclick="selectBuild('elm-score.txt', this)">
+      <h3>Quick</h3>
+      <p>Snelle technische check</p>
+    </div>
 
-    const full = text + "\n\n--- INPUT ---\nKLANT:\n\nOFFERTE:\n";
+  </div>
+  <p id="versionLabel" class="version"></p>
+<b>Klik hier om Elm te kopiëren en te gebruiken:</b>
+  <button class="copy-btn" onclick="copyPrompt()">Kopieer Elm prompt</button>
+  <p>
+Tip: Maak een eigen AI agent met Elm, zodat je deze telkens opnieuw kunt gebruiken.
+</p>
 
-    await navigator.clipboard.writeText(full);
-    alert("Elm prompt gekopieerd!");
-}
-</script>
+<h2>Gebruik</h2>
 
+<ol>
+  <li>Klik op "Kopieer Elm"</li>
+  <li>Plak de prompt in ChatGPT / Copilot / Gemini</li>
+  <li>Voeg daarna je klantvraag + offerte toe en krijg de juiste feedback</li>
+</ol>
+<p><i>Aanrader: maak een eigen agent zodat je Elm kan hergebruiken. Maak af en toe een nieuwe aan, voor de nieuwste versie.</i></p>
+
+<h2>Versies</h2>
+<p>
+Kies de versie die past bij jouw gebruik:
+</p>
+<table class="feature-table">
+
+  <tr>
+    <th>Feature</th>
+    <th>Light</th>
+    <th>Full</th>
+    <th>Quick</th>
+  </tr>
+
+  <tr>
+    <td>Snelle samenvatting</td>
+    <td>✅</td>
+    <td>✅</td>
+    <td>✅</td>
+  </tr>
+
+  <tr>
+    <td>Klantanalyse</td>
+    <td>✅</td>
+    <td>✅</td>
+    <td>❌</td>
+  </tr>
+
+  <tr>
+    <td>Volledige compatibiliteit check</td>
+    <td>✅</td>
+    <td>✅</td>
+    <td>✅</td>
+  </tr>
+
+  <tr>
+    <td>Suggesties / verbeteringen</td>
+    <td>❌</td>
+    <td>✅</td>
+    <td>❌</td>
+  </tr>
+
+  <tr>
+    <td>Klant email genereren</td>
+    <td>❌</td>
+    <td>✅</td>
+    <td>❌</td>
+  </tr>
+
+  <tr>
+    <td>Conclusie & open punten</td>
+    <td>❌</td>
+    <td>✅</td>
+    <td>❌</td>
+  </tr>
+
+  <tr>
+    <td>Scores</td>
+    <td>✅</td>
+    <td>✅</td>
+    <td>✅</td>
+  </tr>
+
+  <tr>
+    <td>Debug info</td>
+    <td>✅</td>
+    <td>✅</td>
+    <td>✅</td>
+  </tr>
+
+</table>
+
+</div>
+  <div id="toast" class="toast">Elm gekopieerd!</div>
+  <script src="script.js"></script>
 </body>
 </html>

@@ -4,7 +4,7 @@ from datetime import datetime
 # 🔹 Basis config
 MODULE_DIR = "modules"
 BUILD_DIR = "builds"
-BASE_VERSION = "v0.3"
+BASE_VERSION = "v0.4.1"
 
 # 🔹 Build definities
 BUILDS = {

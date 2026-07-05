@@ -1,0 +1,114 @@
+body {
+  font-family: Arial;
+  background: #f5f5f5;
+  margin: 0;
+}
+
+.container {
+  max-width: 900px;
+  margin: auto;
+  background: white;
+  padding: 30px;
+}
+
+.cards {
+  display: flex;
+  gap: 15px;
+}
+
+.card {
+  border: 1px solid #ccc;
+  padding: 15px;
+  cursor: pointer;
+  flex: 1;
+}
+
+.card:hover {
+  background: #f0f0f0;
+}
+
+.card.active {
+  border: 2px solid #0078d4;
+  background: #e6f2ff;
+}
+
+.copy-btn {
+  margin-top: 20px;
+  padding: 10px 20px;
+  font-size: 16px;
+}
+
+.feature-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+.feature-table th, .feature-table td {
+  border: 1px solid #ddd;
+  padding: 10px;
+  text-align: center;
+}
+
+.feature-table th {
+  background-color: #0078d4;
+  color: white;
+}
+
+.feature-table td:first-child {
+  text-align: left;
+  font-weight: bold;
+}
+
+.card.active {
+  border: 2px solid #0078d4;
+  background: #e6f2ff;
+}
+
+.feature-table tr:hover {
+  background-color: #f5f5f5;
+}
+
+.toast {
+  visibility: hidden;
+  min-width: 250px;
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  border-radius: 5px;
+  padding: 10px;
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  z-index: 1000;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.toast.show {
+  visibility: visible;
+  opacity: 1;
+}
+
+.card.active:first-child {
+  border: 2px solid #0078d4;
+  background: #e6f2ff;
+}
+
+.card h3 {
+  margin-top: 0;
+}
+
+.version {
+  font-size: 12px;
+  color: #666;
+  margin-top: 5px;
+}
+
+.card {
+  transition: transform 0.1s ease;
+}
+
+.card:hover {
+  transform: scale(1.02);
+}

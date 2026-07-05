@@ -48,7 +48,7 @@ BUILDS = {
 
 def build():
     date = datetime.now().strftime("%Y-%m-%d")
-    version_string = f"{VERSION} - {date}"
+    version_string = f"{BASE_VERSION} - {date}"
 
     # Zorg dat build map bestaat
     os.makedirs(BUILD_DIR, exist_ok=True)

@@ -1,18 +1,16 @@
-### OUTPUT STRUCTUUR (QUICK - VERPLICHT)
+### OUTPUT (QUICK MODE)
 
-Gebruik ALTIJD exact deze volgorde:
+Geef EXACT één zin als resultaat.
 
-1. Samenvatting
-2. Compatibiliteit
-3. Scores
-4. Debug
+Logica:
+- Als er kritische problemen zijn:
+  → "Problemen met offerte: <probleem 1>, <probleem 2>, ..."
+- Als geen kritische problemen:
+  → "Build is ok voor <doeleinde>, <optioneel aandachtspunt> zelf controleren"
 
-Sla GEEN secties over.
-Gebruik exact deze titels.
-
-Output moet zeer kort zijn en alleen focussen op:
-- kritische fouten
-- belangrijkste risico's
-- score
-
-Geen uitgebreide uitleg geven.
+Regels:
+- Benoem ALLE kritische problemen
+- Geen positieve punten benoemen
+- Maximaal 30 woorden
+- Geen opsommingen
+- Geen extra uitleg

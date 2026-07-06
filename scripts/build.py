@@ -4,7 +4,7 @@ from datetime import datetime
 # 🔹 Basis config
 MODULE_DIR = "modules"
 BUILD_DIR = "builds"
-BASE_VERSION = "v0.4.2"
+BASE_VERSION = "v0.5.1"
 
 # 🔹 Build definities
 BUILDS = {
@@ -13,7 +13,10 @@ BUILDS = {
         "01_output_rules_full.md",
         "02_summary.md",
         "03_klantanalyse.md",
-        "04_compatibiliteit.md",
+        "04a_compat_core.md",
+        "04b_compat_physical.md",
+        "04c_compat_configuration.md",
+        "04d_compat_policy.md",
         "05_matching.md",
         "06_suggestions.md",
         "07_email.md",
@@ -24,23 +27,29 @@ BUILDS = {
         "12_priorities.md"
     ],
 
-    "elm-simple.txt": [
+    "elm-light.txt": [
         "00_identity.md",
         "01_output_rules_light.md",
         "02_summary.md",
         "03_klantanalyse.md",
-        "04_compatibiliteit.md",
+        "04a_compat_core.md",
+        "04b_compat_physical.md",
+        "04c_compat_configuration.md",
+        "04d_compat_policy.md",
         "09_scores.md",
         "10_debug.md",
         "11_uncertainty.md",
         "12_priorities.md"
     ],
 
-    "elm-score.txt": [
+    "elm-quick.txt": [
         "00_identity.md",
         "01_output_rules_quick.md",
         "02_summary.md",
-        "04_compatibiliteit.md",
+        "04a_compat_core.md",
+        "04b_compat_physical.md",
+        "04c_compat_configuration.md",
+        "04d_compat_policy.md",
         "09_scores.md",
         "10_debug.md"
     ]

@@ -1,4 +1,4 @@
-let selectedBuild = "elm-simple.txt";
+let selectedBuild = "elm-light.txt";
 
 function selectBuild(build, element) {
     selectedBuild = build;
